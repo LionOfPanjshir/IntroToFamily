@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RLf-ht-EM0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Family-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IntroToFamily" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="vLh-Pp-njn">
+                                <rect key="frame" x="0.0" y="85.333333333333314" width="393" height="681.33333333333348"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jhh-Xq-TKk">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="226.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzK-9a-nOV">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="226.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="AndreaAguin" imageContentMode="scaleAspectFit"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="AndreaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ioy-1I-98s"/>
+                                                    <segue destination="hgf-7Q-zUm" kind="show" identifier="Andrea" id="YRy-dH-5Ay"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDN-Px-FEb">
+                                                <rect key="frame" x="131" y="0.0" width="131" height="226.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="DavidBen2" imageContentMode="scaleAspectFit"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="hgf-7Q-zUm" kind="show" identifier="David" id="jbO-CL-Ozb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNR-VV-BQb">
+                                                <rect key="frame" x="262" y="0.0" width="131" height="226.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="KristinHartigan2" imageContentMode="scaleAspectFit"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="hgf-7Q-zUm" kind="show" identifier="Kristin" id="2KS-rL-5Y7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JCO-JJ-48P">
+                                        <rect key="frame" x="0.0" y="227.33333333333337" width="393" height="226.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGw-ig-Lh0">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="226.66666666666666"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="JanessaHigbee" imageContentMode="scaleAspectFit"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="hgf-7Q-zUm" kind="show" identifier="Elisabeth" id="H5k-ve-XCD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ug2-Am-GIS">
+                                                <rect key="frame" x="131" y="0.0" width="131" height="226.66666666666666"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="JohnHigbee" imageContentMode="scaleAspectFit"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="hgf-7Q-zUm" kind="show" identifier="Paul" id="lku-it-RAF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRe-3h-ive">
+                                                <rect key="frame" x="262" y="0.0" width="131" height="226.66666666666666"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="MadelynHigbee" imageContentMode="scaleAspectFit"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="hgf-7Q-zUm" kind="show" identifier="Mauline" id="l8s-lI-jYQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8v8-ky-566">
+                                        <rect key="frame" x="0.0" y="455.00000000000006" width="393" height="226.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HA0-K7-yK2">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="226.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="MelanieHigbee" imageContentMode="scaleAspectFit"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="hgf-7Q-zUm" kind="show" identifier="Melanie" id="E7l-oY-ma8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxI-0q-kD9">
+                                                <rect key="frame" x="131" y="0.0" width="131" height="226.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="AndrewHigbee" imageContentMode="scaleAspectFit"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="hgf-7Q-zUm" kind="show" identifier="Andrew" id="oYm-d1-Ljx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWI-8b-tKb">
+                                                <rect key="frame" x="262" y="0.0" width="131" height="226.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="MarkHigbee" imageContentMode="scaleAspectFit"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="hgf-7Q-zUm" kind="show" identifier="Mark" id="yZm-W6-cet"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vLh-Pp-njn" secondAttribute="trailing" id="03L-0m-ufc"/>
+                            <constraint firstItem="vLh-Pp-njn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Rp-Nn-UmW"/>
+                            <constraint firstItem="vLh-Pp-njn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O8Y-9i-t5N"/>
+                            <constraint firstItem="vLh-Pp-njn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="UOG-YU-Ndd"/>
+                            <constraint firstItem="vLh-Pp-njn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZJ2-gF-JNa"/>
+                            <constraint firstItem="vLh-Pp-njn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rix-Cb-ypI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Family" id="BbC-tS-T6t"/>
+                    <connections>
+                        <outletCollection property="FamilyButtons" destination="SzK-9a-nOV" collectionClass="NSMutableArray" id="NHw-5I-E0D"/>
+                        <segue destination="hgf-7Q-zUm" kind="show" identifier="Family" id="OU4-aQ-kkL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="4"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="afC-0f-5mm">
+            <objects>
+                <viewController id="hgf-7Q-zUm" customClass="ViewController2" customModule="IntroToFamily" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="byh-Nk-FYX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZBw-HB-FIY">
+                                <rect key="frame" x="76" y="123" width="241" height="155"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6N-1O-kfd">
+                                <rect key="frame" x="181.66666666666666" y="339" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXU-QR-byf">
+                                <rect key="frame" x="74" y="387" width="244" height="157"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdp-Ep-T5Z">
+                                <rect key="frame" x="114" y="298" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0ln-Jo-SnK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0ln-Jo-SnK" firstAttribute="bottom" secondItem="yXU-QR-byf" secondAttribute="bottom" constant="20" id="15c-wf-Dak"/>
+                            <constraint firstItem="yXU-QR-byf" firstAttribute="centerX" secondItem="byh-Nk-FYX" secondAttribute="centerX" id="3cw-ez-NWD"/>
+                            <constraint firstItem="fdp-Ep-T5Z" firstAttribute="top" secondItem="ZBw-HB-FIY" secondAttribute="bottom" constant="20" id="4UY-0R-hW9"/>
+                            <constraint firstItem="yXU-QR-byf" firstAttribute="top" secondItem="f6N-1O-kfd" secondAttribute="bottom" constant="20" id="7CZ-eM-ptA"/>
+                            <constraint firstItem="yXU-QR-byf" firstAttribute="top" secondItem="f6N-1O-kfd" secondAttribute="bottom" constant="20" id="KlX-jh-fgb"/>
+                            <constraint firstItem="ZBw-HB-FIY" firstAttribute="top" secondItem="0ln-Jo-SnK" secondAttribute="top" constant="20" id="PKm-5b-4Me"/>
+                            <constraint firstItem="f6N-1O-kfd" firstAttribute="top" secondItem="fdp-Ep-T5Z" secondAttribute="bottom" constant="20" id="SUm-kE-xST"/>
+                            <constraint firstItem="ZBw-HB-FIY" firstAttribute="centerX" secondItem="byh-Nk-FYX" secondAttribute="centerX" id="Z43-m8-hoH"/>
+                            <constraint firstItem="0ln-Jo-SnK" firstAttribute="bottom" secondItem="ZBw-HB-FIY" secondAttribute="bottom" constant="540" id="d4z-mp-Ufd"/>
+                            <constraint firstItem="f6N-1O-kfd" firstAttribute="top" secondItem="fdp-Ep-T5Z" secondAttribute="bottom" constant="20" id="e2O-jw-6gc"/>
+                            <constraint firstItem="fdp-Ep-T5Z" firstAttribute="centerX" secondItem="byh-Nk-FYX" secondAttribute="centerX" id="j7C-J0-OvT"/>
+                            <constraint firstItem="ZBw-HB-FIY" firstAttribute="leading" secondItem="0ln-Jo-SnK" secondAttribute="leading" constant="76" id="lGS-A5-MG0"/>
+                            <constraint firstItem="f6N-1O-kfd" firstAttribute="centerX" secondItem="byh-Nk-FYX" secondAttribute="centerX" id="qyM-Ig-9xk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zvj-qf-4gE"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="f6N-1O-kfd" id="uCD-OX-Uxh"/>
+                        <outlet property="bioLabel" destination="yXU-QR-byf" id="Kfm-gg-ynL"/>
+                        <outlet property="familyMemberImage" destination="ZBw-HB-FIY" id="dQp-ge-pct"/>
+                        <outlet property="nameLabel" destination="fdp-Ep-T5Z" id="jbS-Oh-oYI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnL-XV-8gX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724.4274809160304" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P9r-8J-Hvv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RLf-ht-EM0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tWg-dN-xOj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="B7g-ol-FMq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NCv-ne-LBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="E7l-oY-ma8"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="AndreaAguin" width="1536" height="1536"/>
+        <image name="AndrewHigbee" width="1440" height="960"/>
+        <image name="DavidBen2" width="689" height="689"/>
+        <image name="JanessaHigbee" width="2010" height="2015"/>
+        <image name="JohnHigbee" width="2015" height="2015"/>
+        <image name="KristinHartigan2" width="960" height="960"/>
+        <image name="MadelynHigbee" width="1908" height="1939"/>
+        <image name="MarkHigbee" width="308" height="318"/>
+        <image name="MelanieHigbee" width="1536" height="2048"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
